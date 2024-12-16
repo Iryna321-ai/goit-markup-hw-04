@@ -218,7 +218,6 @@ a{
     width: 264px;
     height: 112px;
     background: #f4f4fd;
-    margin-bottom: 8px;
 }
 
 .icon-list {
@@ -226,7 +225,6 @@ a{
     padding-right: 100px;
     padding-bottom: 24px;
     padding-left: 100px;
-    margin: 0 auto;
 }
 .strategy-card-title {
     font-weight: 500;
@@ -297,6 +295,40 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+}
+
+.social-container {
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover {
+    background-color: #31d0aa;
+    transform: background-color;
+}
+
+.social-list-icons {
+    fill: #f4f4fd;
 }
 
 .portfolio-section {
