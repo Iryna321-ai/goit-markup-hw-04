@@ -208,6 +208,15 @@ a{
 .strategy-item {
     width: calc((100% - 3*24px)/4);
 }
+
+.icon-strategy {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 100%;
+    height: 112px;
+    background: #f4f4fd;
+    margin: 0;
+}
 .strategy-card-title {
     font-weight: 500;
     font-size: 20px;
