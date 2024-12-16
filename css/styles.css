@@ -217,6 +217,14 @@ a{
     background: #f4f4fd;
     margin: 0;
 }
+
+.icon-list {
+    padding-top: 24px;
+    padding-right: 100px;
+    padding-bottom: 24px;
+    padding-left: 100px;
+    margin: 0 auto;
+}
 .strategy-card-title {
     font-weight: 500;
     font-size: 20px;
