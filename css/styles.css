@@ -366,34 +366,35 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 }
 
 .portfolio-item {
-position: relative;
-overflow: hidden;
+
 width: calc((100% - 48px)/3);
 }
 
 .section-image {
-position: absolute;
-top: 0;
-left: 0;
-transform: translateY(100%);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.section-image:hover .overlay-text{
-    transform: translateY(0);
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+position: relative;
+overflow: hidden;
 }
 
 .overlay-text {
-    padding: 40px 32px;
-    background-color: #4d5ae5;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+        top: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+        padding: 40px 32px;
+        background-color: #4d5ae5;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin: 0;
+}    
+
+.portfolio-item:hover .overlay-text{
+    transform: translateY(0%);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);   
 }
 
 .card-portfolio {
@@ -461,20 +462,28 @@ font-weight: 500;
     margin-bottom: 16px;
 }
 
-.social-list-footer .social-list-link-footer {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
+    .social-list-item-footer {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: #4d5ae5;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.social-list-footer .social-list-link-footer:hover,
-.social-list-footer .social-list-link-footer:focus{
+    .social-list-link-footer {
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
     background-color: #31d0aa;
     transform: background-color;
+}
+
+.social-list-icons {
+    fill: #f4f4fd;
 }
