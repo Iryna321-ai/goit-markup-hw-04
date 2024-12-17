@@ -319,23 +319,28 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     gap: 24px;
 }
 
-.social-list .social-list-link {
+.social-list-item {
+    width: 40px;
+    height: 40px;
+} 
+
+.social-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: #4d5ae5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: #31d0aa;
+    transform: background-color;
 }
+
 
 .social-list-icons {
     fill: #f4f4fd;
