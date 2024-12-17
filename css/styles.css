@@ -315,8 +315,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 .social-list {
     display: flex;
-    justify-content: center;
-    gap: 24px;
+   
 }
 
 .social-list-item {
@@ -326,6 +325,10 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 .social-list-link {
     display: flex;
+    justify-content: center;
+    gap: 24px;
+    fill: none;
+    stroke: #f4f4fd;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -337,7 +340,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 .social-list-link:hover,
 .social-list-link:focus {
-    background-color: #31d0aa;
+    background-color: #404bbf;
     transform: background-color;
 }
 
